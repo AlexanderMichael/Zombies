@@ -1,0 +1,461 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto Zombie</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	left: 91px;
+	top: 3743px;
+	width: 326px;
+	height: 102px;
+	z-index: 1;
+	font-size: 36px;
+}
+#apDiv2 {
+	position: absolute;
+	left: 106px;
+	top: 3683px;
+	width: 290px;
+	height: 69px;
+	z-index: 1;
+}
+</style>
+</head> 
+<body>
+<div data-role="page" id="page" class="fondo">
+	<div class="ui-bar-a" data-role="header"><span class="Titulo">¿Y TU QUE ELEGIRIAS?</span></div>
+	<div data-role="content" class="fondo">
+    	<br>
+        <br>
+        
+    	<div class="men">
+			<ul class="ui-bar-a" data-role="listview" data-theme="a">
+				<li><a href="#page2"><center>Zombies</center></a></li>
+			</ul>		
+		</div>
+    </div>
+	<div class="ui-bar-a" data-role="footer">
+	       <div style="float:right;"><a href="#autor"><button><p style="font-size:16px;">Autores</p></button></a></div>
+	</div>
+</div>
+</div>
+
+
+<!--Preguntas-------------------------------------------------->
+
+<div data-role="page" id="page2" class="fondo">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let">Vas caminando a la escuela y derepente escuchas gritos, tu...	  </p>
+	  <ol>
+	    <li class="opciones"><a href="#page3"><img src="Images/INVESTIGAR.jpg" width="104" height="160"> </a> Investigas</li>
+	    <li class="opciones"><a href="#page8"><img src="Images/ssss.jpg" width="104" height="160"></a> Sigues Caminando</li>
+	    <li class="opciones"><a href="#page20"><img src="Images/call.jpg" width="104" height="160"> </a> Llamas a la policia</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3" class="fondo">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content"> 
+	  <p class="let">Vas a donde provienen los gritos y ves a alguien de cara extraña (zombie) atacando a otra persona</p>
+	  <ol>
+	    <li class="opciones"><a href="#page4"><img src="Images/21c.jpg" width="104" height="160"></a> Interfieres</li>
+	    <li class="opciones"><a href="#page5"><img src="Images/corre.jpg" width="104" height="160"></a> Huyes</li>
+	    <li class="opciones"><a href="#page13"><img src="Images/selfie4.jpg" width="104" height="160"></a> Te tomas una selfie</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4" class="fondo">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let">Ves la cara del atacante y te das cuenta que tiene una apariencia muerta, tu...</p>
+	  <ol>
+	    <li class="opciones"><a href="#page5"><img src="Images/corre.jpg" alt="" width="104" height="160"></a> Huyes</li>
+	    <li class="opciones"><a href="#page7"><img src="Images/cr.jpg" width="104" height="160"></a> Le recomiendas cremas.</li>
+	    <li class="opciones"><a href="#page14"><img src="Images/Screenshot_2015-06-09-20-14-40-1.png" width="104" height="160"></a> Lo atacas</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div class="fondo" id="page5" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let"> Te diriges a una puerta que esta abierta cerca de ahí y en su interior descubres más gente grotesca, tu...</p>
+	  <ol>
+	    <li class="opciones"><a href="#page6"><img src="Images/escapar.jpg" width="104" height="160"></a> Tratas de huir.</li>
+	    <li class="opciones"><a href="#page7"><img src="Images/Screenshot_2015-06-09-20-14-40-1.png" width="104" height="160"></a> Lo atacas.</li>
+	    <li class="opciones"><a href="#page7"><img src="Images/zmp.jpg" width="104" height="160"></a> Party Zombie.</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div class="fondo" id="page6" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+  <div data-role="content">
+    <p class="let"> Ves una ventana abierta y vas corriendo a ella te atrapa uno de ellos tu...</p>
+    <ol>
+      <li class="opciones"><a href="#page7"><img src="Images/fgbfb.jpg" width="104" height="160"></a> Te rindes. </li>
+      <li class="opciones"><a href="#page17"><img src="Images/acf.jpg" width="104" height="160"></a> Lo pateas.</li>
+    </ol>
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="page7" class="fondo2">
+<div data-role="header">
+		<h1></h1>
+  </div>
+	<div data-role="content" class="fondo2" >
+	  <div align="center"><img src="Images/hm.jpg" width="465" height="375"></div>
+  </div>
+	  <div data-role="footer">
+      <div style="float:right;"><a href="#page"><button><p style="font-size:16px;">Volver a intentar</p></button></a></div>
+	</div>
+</div>
+
+<div class="fondo" id="page8" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+  <div data-role="content">
+    <p class="let">Sigues caminando y de repente un coche se estrella en un edificio.</p>
+    <ol>
+      <li class="opciones"><a href="#page9"><img src="Images/acs.jpg" width="104" height="160"></a> Verificas si se encuentra bien.</li>
+      <li class="opciones"><a href="#page10"><img src="Images/callll.jpg" width="104" height="160"></a> Llamas al 911.</li>
+      <li class="opciones"><a href="#page12"><img src="Images/a.jpg" width="104" height="160"></a> Sigues Caminando.</li>
+    </ol>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div class="fondo" id="page9" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let"> Ya que estas cerca de ella para ver si esta bien la persona, notas que le sale sangre de la cabeza, tu...</p>
+	  <ol>
+	    <li class="opciones">  <span class="opciones"><a href="#page10"><img src="Images/ayu.jpg" width="104" height="160"></a> Le ayudas.</li>
+	    <li class="opciones"><a href="#page10"><img src="Images/callll.jpg" width="104" height="160"> </a>Llamas al 911.</li>
+	    <li class="opciones"><a href="#page7"><img src="Images/tedolio.jpg" width="104" height="160"></a> Le preguntas si le dolio.</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div class="fondo" id="page10" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let"> Intentas marcar al 911, pero en eso la persona se levanta y te muerde el brazo, tu...</p>
+	  <ol>
+	    <li class="opciones"><a href="#page7"><img src="Images/tre.jpg" width="104" height="160"></a> Bailas Thriller</li>
+	    <li class="opciones"><a href="#page11"><img src="Images/escapar.jpg" width="104" height="160"> </a>Tratas de Huir</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4 class="texto1"></h4>
+	</div>
+</div>
+
+<div class="fondo2" id="page11" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div class="let" data-role="content">Tratas de escapar pero el dolor es insoportable y antes de que te des cuenta has perdido demasiada sangre, caes al piso, te desmayas y mueres.</div>
+    
+	<div data-role="footer">
+    <div style="float:right;"><a href="#page"><button><p style="font-size:16px;">Volver a intentar</p></button></a></div>
+	</div>
+</div>
+
+<div class="fondo2" id="page12" data-role="page" >
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div class="let" style="background:#009" data-role="content"> Llegas a la escuela, vas tarde, la puerta esta cerrada brincas la barda para entrar, todo transcurre normal, de regreso a tu casa enciendes la televisión y ves en el canal de noticias, información de una enfermedad que transforma a las personas normales en muertos caminantes.</div>
+	<div data-role="footer">
+	  <div style="float:right;"><a href="#page"><button><p style="font-size:16px;">Volver a intentar</p></button></a></div>
+	</div>
+</div>
+
+<div class="fondo2" id="page13" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let">Tratas de tomarte una selfie y el atacante te muerde actos seguidos caes al piso y mueres.</p>
+	  <p align="center" class="texto1"><span class="in"><span class="GameOver">GAME OVER</span></span></p>
+	  <p align="center"></p>
+	</div>
+	<div data-role="footer">
+		<div style="float:right;"><a href="#page"><button><p style="font-size:16px;">Volver a intentar</p></button></a></div>
+	</div>
+</div>
+
+
+<div class="fondo" id="page14" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let"> Logras quitartelo de encima y te diriges hacia la persona, que atacó.</p>
+	  <ol>
+	    <li class="opciones"><a href="#page15"><img src="Images/acs.jpg" width="104" height="160"></a> Te aseguras de que este bien</li>
+	    <li class="opciones"><a href="#page8"><img src="Images/seguir.jpg" width="105" height="160"></a>Te vas
+	    </li>
+	    <li class="opciones"><a href="#page7"><img src="Images/whats.jpg" width="104" height="160"></a> Le pides su WhatsApp.</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div class="fondo" id="page15" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let"> La persona que parecia inconciente se levanta de repente y te ataca.</p>
+	  <ol>
+	    <li class="opciones"><a href="#page16"><img src="Images/Screenshot_2015-06-09-20-14-40-1.png" width="104" height="160"></a> Lo atacas</li>
+	    <li class="opciones"><a href="#page5"> <img src="Images/hiuuu.jpg" alt="" width="104" height="160"></a> Huyes.</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div class="texto1" id="page16" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content" class="fondo">
+	  <p class="let">A la hora de atacarlo, no puedes contra el, te muerde acto seguido te desmayas y mueres.</p>
+	</div>
+	<div data-role="footer">
+		<div style="float:right;"><a href="#page"><button><p style="font-size:16px;">Volver a intentar</p></button></a></div>
+	</div>
+</div>
+
+<div class="fondo" id="page17" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let"> Logras quitartelo de encima y caes sobre botes de basura, más seres grotescos se acercan a ti, tu...</p>
+	  <ol>
+	    <li class="opciones"><a href="#page18"><img src="Images/Screenshot_2015-06-09-19-28-18-1.png" width="104" height="160"></a> Te escondes</li>
+	    <li class="opciones"><span class="opciones"><a href="#page7"><img src="Images/nnn.jpg" width="104" height="160"></a> Te rindes</span></li>
+      </ol>
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div class="fondo2" id="page18" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+  </div>
+	<div data-role="content">
+	  <p class="let"> Logras esconderte lo suficientemente bien para que ellos no te encuentren, despues de unas horas, sales y tratas de buscar más gente, dandote cuenta que todo esta deiserto, tu...</p>
+	  <ol>
+	    <li class="opciones"><a href="#page7"><img src="Images/wd.gif" width="104" height="160"></a> Te suicidas</li>
+	    <li> <span class="opciones"><a href="#page19"><img src="Images/cbyf.jpg" width="104" height="160"></a> Sigues buscando</span></li>
+      </ol>
+	</div>
+	<div data-role="footer">
+	  <h4></h4>
+	</div>
+</div>
+
+<div class="fondo2" id="page19" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let">Encuentras sobrevivientes y juntos arman una fortaleza que logran mantenerlos vivos	hasta que llega el invierno, se les acaban las provisiones y mueren.</p>
+	</div>
+	<div data-role="footer">
+	  <h4></h4>
+	</div>
+</div>
+
+<div class="fondo2" id="page20" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let"> Te contesta un oficial y le das la dirección de tu ubicación y te dicen que aguardes ahí...</p>
+	  <ol>
+	    <li class="opciones"><a href="#page21"><img src="Images/espe.jpg" width="104" height="160"></a> Esperas Ahí.</li>
+	    <li class="opciones"><a href="#page7"><img src="Images/cambio.jpg" width="223" height="160"></a>Publicas un estado en Facebook</li>
+	    <li class="opciones"><a href="#page12"><img src="Images/ssss.jpg" width="104" height="160"></a> Sigues Caminando</li>
+	  </ol>
+	</div>
+	<div data-role="footer">
+	  <h4></h4>
+	</div>
+</div>
+
+<div class="fondo" id="page21" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let"> Esperas justo como te dijo el oficial , una persona enfurecida corre hacia ti, tu...</p>
+	  <ol>
+	    <li class="opciones"><a href="#page22"><img src="Images/atacar.jpg" width="104" height="160"></a>Lo atacas.</li>
+	    <li class="opciones"><a href="#page26"><img src="Images/Screenshot_2015-06-09-19-16-13-1.png" width="104" height="160"> </a>Huyes.</li>
+	    <li class="opciones"><a href="#page7"><img src="Images/dsc030201.jpg" width="104" height="160"></a>Le pides amor</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+	  <h4></h4>
+	</div>
+</div>
+
+<div class="fondo" id="page22" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let"> Logras quitartelo de encima, te das cuenta que mas como el se dirigen hacia a ti, tu...</p>
+	  <ol>
+	    <li class="opciones"><a href="#page18"><img src="Images/Screenshot_2015-06-09-19-28-18-1.png" width="104" height="160"></a>Te escondes</li>
+	    <li class="opciones"><a href="#page23"><img src="Images/trrrr.jpg" width="104" height="160"></a>Te robas un auto.</li>
+	    <li class="opciones"><a href="#page7"><img src="Images/grupo.jpg" width="104" height="160"></a>Selfie en grupo.</li>
+      </ol>
+	</div>
+	<div data-role="footer">
+	  <h4></h4>
+	</div>
+</div>
+
+<div class="fondo" id="page23" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let">Empiezas a conducir dandote cuenta del estado de la ciudad ,todo mundo, seres grotescos atacan a las personas, tu...</p>
+	  <ol>
+	    <li class="opciones"><a href="#page24"><img src="Images/f002354.jpg" width="104" height="160"></a>Sigues Conduciendo.</li>
+	    <li class="opciones"><a href="#page7"><img src="Images/mo.jpg" width="104" height="160"></a>Te bajas del coche.</li>
+      </ol>
+	  <p></p>
+	</div>
+	<div data-role="footer">
+	  <h4></h4>
+	</div>
+</div>
+
+<div class="fondo" id="page24" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+      <p class="let">Continuas conduciendo hasta que la gasolina se agota,por suerte logras salir de la ciudad,te encuentras cerca de la costa, tu... </p>
+      <ol>
+        <li class="opciones"><a href="#page25"><img src="Images/costa.JPG" width="104" height="160"></a>Te diriges a la costa.</li>
+        <li class="opciones"><a href="#page7"><img src="Images/n.jpg" width="104" height="160"></a>Te Suicidas.</li>
+      </ol>
+  </div>
+	<div data-role="footer">
+	  <h4></h4>
+	</div>
+</div>
+
+<div class="fondo3" id="page25" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content" class="fondo3">
+	  <p class="texto2">Encuentras a otras personas que lograron salir de sus ciudades , despues de un tiempo, construyen un barco y comienzan a navegar en el mar, encuentran una isla logran habitarla pacificamente, pasa el tiempo y te has vuelto mayor, consigues formar una familia, tu opinion como lider del grupo es de vital importancia, tu tienes la decision para que el aparente final se transforme en un nuevo comienzo.</p>
+		<center><span class="Fel">¡FELICIDADES!</span></center>
+        <center><span class="texto1">gracias por jugar</span></center>
+	</div>
+
+</div>
+
+<div class="fondo2" id="page26" data-role="page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <p class="let">Logras esconderte y consigues vivir en la ciudad, aunque los suministros suelen ser escasos te las arreglas para sobrevivir , eventualmente encuentas a mas 	gente,logras armar un grupo, unas noches se reunen para el futuro del grupo,	como lider tu opinion es crucial , tu decides si van o vienen, quien vive o quien muere, todo depende de ti, tu..</span>..</p>
+	
+    </div>
+	<div data-role="footer">
+	  <h4></h4>
+	</div>
+</div>
+
+
+<!--Terminan preguntas----------------------------------------->
+
+<div data-role="page" id="autor" class="fondo">
+	<div class="ui-bar-a" data-role="header">
+    	AUTORES
+    </div>
+    
+    <div data-role="content" class="fondo">
+    	<div class="men">
+        	<div>
+            <div style="background-color:#004; width:25%; height:25%; margin-left:35%; color:#FFF; font-family:'Comic Sans MS', cursive; font-size:18px; text-align:center; border:double 6px #FFFFCC;">
+        	Liliana Velazquez Silverio<br>
+            Josselin Castro Cisneros<br>
+            Mariana Campos Garnica<br>
+            Mitzi Lizbeth Calva Chacon<br>
+            Melquiades Garrido Ponce<br>
+            Ivan Perez Esteban<br>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="ui-bar-a" data-role="footer">
+    	<div style="float:left"><a href="#page"><button>Atras</button></a></div>
+</div>
+
+</body>
+</html>
